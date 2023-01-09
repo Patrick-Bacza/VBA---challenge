@@ -1,11 +1,11 @@
-Attribute VB_Name = "Module4"
+
 Sub stockprices():
 
 ' ensure that script loops through each worksheet
 
 For Each ws In Worksheets
 
-' Name colums
+' Name columns
 
 ws.Range("I1").Value = "Ticker"
 ws.Range("J1").Value = "Yearly Change"
