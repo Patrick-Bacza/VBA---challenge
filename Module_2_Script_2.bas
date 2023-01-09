@@ -1,4 +1,4 @@
-Attribute VB_Name = "Module5"
+
 Sub greatest():
 
 ' Ensure script loops through each worksheet
@@ -22,7 +22,7 @@ Dim max_increase As Double
 Dim max_decrease As Double
 Dim max_volume As Double
 
-'Capture the last row into a variable and set Max/min variables to the maximum and minmum values being asked for
+'Capture the last row into a variable and set Max/min variables to the maximum and minimum values being asked for
 
 last_row = ws.Cells(Rows.Count, 1).End(xlUp).Row
 
@@ -31,7 +31,7 @@ max_decrease = Application.WorksheetFunction.Min(ws.Range("K2:K" & last_row))
 max_volume = Application.WorksheetFunction.Max(ws.Range("L2:L" & last_row))
 
 ' For loop is used to grab the ticker symbol
-' loop through the corect columns and find the max/min and grab the ticker symbol for both
+' loop through the correct columns and find the max/min and grab the ticker symbol for both
 
 
  For i = 2 To last_row
@@ -66,7 +66,7 @@ max_volume = Application.WorksheetFunction.Max(ws.Range("L2:L" & last_row))
      ws.Range("P4").Value = greatest_v_ticker
      ws.Range("Q4").Value = max_volume
      
-' formatted percetnage change column as percent
+' formatted percentage change column as percent
      ws.Range("Q2:Q3").NumberFormat = "0.00%"
      
 Next ws
