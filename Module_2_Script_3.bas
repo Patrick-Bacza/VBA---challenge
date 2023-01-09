@@ -1,4 +1,4 @@
-Attribute VB_Name = "Module6"
+
 Sub conditional_formatting():
 
 ' ensure it runs for each worksheet
