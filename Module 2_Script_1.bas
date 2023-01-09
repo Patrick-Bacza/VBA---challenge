@@ -82,7 +82,7 @@ For i = 2 To last_row
       
     Next i
     
-' formt the percentage change row to percent
+' format the percentage change row to percent
     
     ws.Range("K2:K" & last_row).NumberFormat = "0.00%"
     
